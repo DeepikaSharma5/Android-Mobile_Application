@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".AdminDashboard">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+
+        android:background="@color/colorPrimaryDark"
+
+        />
+    <ImageView
+        android:id="@+id/menuicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_gg_menu_left" />
+
+    <ImageView
+        android:id="@+id/carticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        app:srcCompat="@drawable/ic_fa_solid_shopping_cart" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Albito"
+        android:fontFamily="@font/pinyon_script"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="2dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/tshirticon" />
+
+            <TextView
+                android:id="@+id/adminproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/overlock"
+                android:textSize="20dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp"
+                android:text="@string/Products" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="2dp"
+            android:layout_marginTop="340dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_baseline_feedback_24" />
+
+            <TextView
+                android:id="@+id/adminfeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/overlock"
+                android:text="@string/Feedback"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="2dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/shipping"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_baseline_local_shipping_24" />
+
+            <TextView
+                android:id="@+id/adminship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/overlock"
+                android:text="@string/Shipping"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="2dp"
+            android:layout_marginTop="500dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp">
+
+
+            <ImageView
+                android:id="@+id/discount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/overlock"
+                android:text="@string/Discount"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/dashpic" />
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/adnavmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/admin_navigation_menu"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:headerLayout="@layout/layout_navibar_header"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

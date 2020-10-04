@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <EditText
+        android:id="@+id/ProductName"
+        android:layout_width="373dp"
+        android:layout_height="64dp"
+        android:background="@drawable/custom_stroke_radius_button"
+        android:ems="10"
+        android:hint="Enter Product Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#B9B4B4"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <EditText
+        android:id="@+id/Brand"
+        android:layout_width="379dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_stroke_radius_button"
+        android:ems="10"
+        android:hint="Enter Brand Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#B9B4B4"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="379dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_stroke_radius_button"
+        android:ems="10"
+        android:hint="Enter Product Price"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#B9B4B4"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="379dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_stroke_radius_button"
+        android:ems="10"
+        android:hint="Enter image url"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#B9B4B4"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <EditText
+        android:id="@+id/Color"
+        android:layout_width="374dp"
+        android:layout_height="66dp"
+        android:background="@drawable/custom_stroke_radius_button"
+        android:ems="10"
+        android:hint="Choose Colour"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#B9B4B4"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+
+
+    <Button
+        android:id="@+id/AddProductButton"
+        android:layout_width="158dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/custom_color_button"
+        android:text="Update"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginRight="190dp"
+        android:text="Edit product"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity"
+            android:label="@string/Albito">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditProfile" />
+        <activity android:name=".ProfileUser"></activity>
+        <activity android:name=".CartActivity" />
+        <activity android:name=".FeedbackMainActivity" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".KidsActivity" />
+        <activity android:name=".WomenActivity" />
+        <activity
+            android:name=".MenActivity" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".AddCategory" />
+        <activity android:name=".Homeactivity" />
+        <activity android:name=".home" />
+        <activity android:name=".Crud" />
+        <activity android:name=".AddProduct" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Adimin" />
+        <activity android:name=".Login">
+
+        </activity>
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".DeleteShipping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeletePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewshippingdetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewpaymentdetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewcodedetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewPaymentShipping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShippingDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseConfirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddCode"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

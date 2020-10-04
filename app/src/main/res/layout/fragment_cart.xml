@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        >
+        <!--
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/backarrow"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+         -->
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_above="@+id/lin1"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_above="@+id/nxt_btn"
+        android:background="@color/colorGray"
+        >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount : "
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            android:layout_weight="4"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/txt_title_rs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_weight="6"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/nxt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "384497572442",
+    "firebase_url": "https://albito-4f9e0.firebaseio.com",
+    "project_id": "albito-4f9e0",
+    "storage_bucket": "albito-4f9e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384497572442:android:605f4c709d4be786229663",
+        "android_client_info": {
+          "package_name": "com.example.myapplication1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384497572442-vfn00rcj14sq69cfvtauebu3gobihdl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBim0gRpB2XsVjwRolwFJuAXtAsBT01CVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384497572442-vfn00rcj14sq69cfvtauebu3gobihdl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

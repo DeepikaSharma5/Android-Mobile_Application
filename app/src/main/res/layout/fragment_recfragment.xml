@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    tools:context=".Homeactivity"
+    tools:openDrawer="start">
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+
+                android:background="@color/colorPrimaryDark"
+
+                >
+            <ImageView
+                android:id="@+id/menuicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_gg_menu_left" />
+
+                <ImageView
+                    android:id="@+id/carticon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    app:srcCompat="@drawable/ic_fa_solid_shopping_cart" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Albito"
+                    android:fontFamily="@font/pinyon_script"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="364dp"
+                android:layout_height="167dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/poster1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homerecview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
+
+   <com.google.android.material.navigation.NavigationView
+       android:id="@+id/navmenu"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       app:menu="@menu/navigation_menu"
+       android:layout_gravity="start"
+       app:itemIconTint="@color/colorPrimaryDark"
+       app:headerLayout="@layout/layout_navibar_header"/>
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

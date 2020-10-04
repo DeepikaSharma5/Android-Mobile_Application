@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCode"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/shippingpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_background"
+        android:elegantTextHeight="true"
+        android:fontFamily="monospace"
+        android:text="@string/shippingpayment"
+        android:textAlignment="center"
+        android:textColor="#060505"
+        android:textSize="38sp" />
+
+
+    <TextView
+        android:id="@+id/viewshippingpayment"
+        android:layout_width="390dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/viewshippingpayment"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gif" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="#FCEBEB"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/viewshipping"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonround"
+                    android:backgroundTint="#F7528A"
+                    android:fontFamily="monospace"
+                    android:text="@string/viewshipping"
+                    android:textColor="#000000"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number02">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/Deleteshipping"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonround"
+                    android:backgroundTint="#F7125F"
+                    android:fontFamily="monospace"
+                    android:text="@string/Deleteshipping"
+                    android:textColor="#000000"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number02">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/viewpayment"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonround"
+                    android:backgroundTint="#E465F9"
+                    android:fontFamily="monospace"
+                    android:text="@string/viewpayment"
+                    android:textColor="#000000"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number02">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/Deletepayment"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonround"
+                    android:backgroundTint="#D60BF8"
+                    android:fontFamily="monospace"
+                    android:text="@string/Deletepayment"
+                    android:textColor="#000000"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number02">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/spcancel"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonround"
+                    android:backgroundTint="#FF0000"
+                    android:fontFamily="monospace"
+                    android:text="@string/spcancel"
+                    android:textColor="#000000"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number02">
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

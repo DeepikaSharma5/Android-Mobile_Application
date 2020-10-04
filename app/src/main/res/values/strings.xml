@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Men</string>
+    <string name="Category1">Men</string>
+    <string name="Shirt1">Hollister</string>
+    <string name="Description1">Full Sleeved Tshirt</string>
+    <string name="Jeans1">DNMX</string>
+    <string name="Description2">Torned slim fit Jeans</string>
+    <string name="Trouser1">Splash</string>
+    <string name="Description3">Brown Trouser</string>
+    <string name="DenShirt1">DNMX</string>
+    <string name="Description">Denim Shirt</string>
+    <string name="Tshirt2">Ausk</string>
+    <string name="Description5">Cotton crew Tshirt</string>
+    <string name="Shirt2">Strop</string>
+    <string name="Description6">Long sleeved formal</string>
+    <string name="price1">Rs.1500</string>
+    <string name="Price2">Rs.2500</string>
+    <string name="Price3">Rs.3000</string>
+    <string name="Price4">Rs.2999</string>
+    <string name="Price5">Rs.3999</string>
+    <string name="All" translatable="false">All</string>
+    <string name="Tshirts">Tshirts</string>
+    <string name="Shirts">Shirts</string>
+    <string name="Jeans">Jeans</string>
+    <string name="Trouser">Trouser</string>
+    <string name="Cart">Add to Cart</string>
+    <string name="Quantity">Qty</string>
+    <string name="AddProduct">Add Product</string>
+    <string name="AddImage">Add Product Image Here</string>
+    <string name="Grey">Grey,Blue,Red</string>
+    <string name="Delete">Delete</string>
+    <string name="Update">Update</string>
+    <string name="ProductList">Products List</string>
+    <string name="Appname">Albito</string>
+    <string name="NewArrive">New Arrivals</string>
+    <string name="Popular">Most Popular Products</string>
+    <string name="Xl">XL</string>
+    <string name="L">L</string>
+    <string name="M">M</string>
+    <string name="S">S</string>
+    <string name="logout">Logout</string>
+    <string name="Orders">Orders</string>
+    <string name="Categories">Categories</string>
+    <string name="Settings">Settings</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+
+    <string name="Profile">Profile</string>
+    <string name="title_activity_nav_home">NavHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="Welcome">Welcome to Albito!!!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Men">Men</string>
+    <string name="Women">Women</string>
+    <string name="Kids">Kids</string>
+    <string name="Edit">Edit</string>
+    <string name="Del">Delete</string>
+
+    //Strings of Shalini
+    <string name="M10">Username</string>
+    <string name="M11">Password</string>
+    <string name="M12">Email</string>
+    <string name="M13">Address</string>
+    <string name="M14">Contact No</string>
+    <string name="M25">Create your Account</string>
+    <string name="M1">Log in to your Account</string>
+    <string name="M4">Login</string>
+    <string name="M19">FEEDBACK</string>
+    <string name="M20">After using Albito for a bit now, how would you rate your experience?</string>
+    <string name="M7">Rate Us...</string>
+    <string name="M41">Edit Feedback</string>
+    <string name="M42">Enter username</string>
+    <string name="M44">Add Feedback</string>
+    <string name="M43">Leave your comments</string>
+    <string name="M45">Feedback</string>
+    <string name="M40">CREATE ACCOUNT</string>
+
+
+    //Strings of DEEPIKA
+    //Strings of Shipping Details
+    <string name="shipping">SHIPPING DETAILS</string>
+    <string name="pno">Find By Phone Number</string>
+    <string name="button1">SEARCH</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="address1">Address Line 1</string>
+    <string name="address2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="pcode">Postal Code</string>
+    <string name="pnumber">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="proceed">PROCEED TO PAYMENT</string>
+    <string name="cancel">Cancel</string>
+
+    //Strings of Payment
+    <string name="payment">PAYMENT</string>
+    <string name="code">XXXX "\t" XXXX "\t" XXXX "\t" XXXX</string>
+    <string name="cardholder">CARDHOLDER</string>
+    <string name="month">06</string>
+    <string name="mm">MM</string>
+    <string name="a">/</string>
+    <string name="year">21</string>
+    <string name="yy">YY</string>
+    <string name="cvv">XXX</string>
+    <string name="cv">CVV</string>
+    <string name="num">CARD NUMBER</string>
+    <string name="holder">CARD HOLDER</string>
+    <string name="expire">EXPIRE DATE</string>
+    <string name="cvv1">CVV</string>
+    <string name="view">VIEW CARD</string>
+    <string name="proceed1">CONFIRM PAYMENT</string>
+    <string name="cancel1">Cancel</string>
+    <string name="edit">EDIT SHIPPING DETAILS</string>
+
+    //Strings of Edit Shipping Details
+    <string name="esdetail">EDIT SHIPPING DETAILS</string>
+    <string name="fbphone">FIND BY PHONE</string>
+    <string name="search1">SEARCH</string>
+    <string name="aline1">Address Line 1</string>
+    <string name="aline2">Address Line 2</string>
+    <string name="city1">City</string>
+    <string name="pcode1">Postal Code</string>
+    <string name="pnumber1">Phone Number</string>
+    <string name="email1">Email</string>
+    <string name="savecont">Save and Continue</string>
+    <string name="cancel3">Delete Details</string>
+
+
+    //Strings of Payment confirmation
+    <string name="confirm">PURCHASE CONFIRMATION</string>
+    <string name="cpayment">PROCEED TO SHIPPING</string>
+    <string name="cancel4">Cancel</string>
+    <string name="addpromo">CHECK FOR DISCOUNT CODE</string>
+    <string name="Totalamount">Total Amount</string>
+    <string name="amount">2700.00</string>
+    <string name="discountcode">Enter Discount Code</string>
+    <string name="finalamount">Final Amount</string>
+    <string name="discount">Enter promo code</string>
+    <string name="checkprice">GET YOUR FINAL AMOUNT</string>
+
+    //Strings of CRUD
+    <string name="discounts">DISCOUNTS</string>
+    <string name="adddiscountcode">Add Discounts</string>
+    <string name="description">Description</string>
+    <string name="discode">Discount Code</string>
+    <string name="add">ADD CODE</string>
+    <string name="viewcode">VIEW CODES</string>
+    <string name="button_edit">UPDATE CODE</string>
+    <string name="update">Update Discount</string>
+    <string name="searchcode">Find by code</string>
+    <string name="searchcodeid">SEARCH</string>
+    <string name="deletecode">DELETE CODE</string>
+    <string name="updatecode">UPDATE CODE</string>
+
+    <string name="shippingpayment">SHIPPING AND PAYMENT</string>
+    <string name="viewshippingpayment">View Shipping and Payment Details</string>
+    <string name="viewshipping">VIEW SHIPPING DETAILS</string>
+    <string name="viewpayment">VIEW PAYMENT DETAILS</string>
+    <string name="Deleteshipping">DELETE SHIPPING DETAILS</string>
+    <string name="Deletepayment">DELETE PAYMENT DETAILS</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_cancel_1">Cancel</string>
+    <string name="spcancel">Cancel</string>
+
+    <string name="deleteshipping">DELETE SHIPPING DETAILS</string>
+    <string name="shipid">Phone number of data</string>
+    <string name="shipcancel">Cancel</string>
+    <string name="deleteship">DELETE</string>
+    <string name="payid">Search by last 4 digits of card</string>
+
+    <string name="paymentdelete">DELETE PAYMENT DETAIL</string>
+    <string name="deletepayment">DELETE</string>
+    <string name="cancelpaymentdel">Cancel</string>
+    <string name="Logout">Logout</string>
+    <string name="Save">Save</string>
+    <string name="Albito">Albito</string>
+    <string name="Products">Products</string>
+    <string name="Feedback">Feedback</string>
+    <string name="Shipping">Shipping</string>
+    <string name="Payment">Payment</string>
+    <string name="Discount">Discount</string>
+    <string name="title_activity_men">MenActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="Intro">Buy now or cry later..</string>
+    //End of String of DEEPIKA
+
+</resources>

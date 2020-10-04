@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuProfile"
+        android:title="@string/Profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+
+
+
+    <item android:id="@+id/menuCategory"
+        android:title="Admin"
+        android:icon="@drawable/catogoryicon">
+
+        <menu>
+            <item android:id="@+id/menuProduct"
+                android:title="@string/ProductList"
+                android:icon="@drawable/tshirticon"
+                />
+
+            <item android:id="@+id/menuShipping"
+                android:title="Shipping List"
+                android:icon="@drawable/tshirticon"
+                />
+
+            <item android:id="@+id/menuFeedback"
+                android:title="FeedbackList"
+                android:icon="@drawable/tshirticon"
+                />
+
+        </menu>
+    </item>
+
+    <item android:id="@+id/menuOptions"
+        android:title="Others"
+        android:icon="@drawable/catogoryicon">
+
+        <menu>
+
+
+            <item android:id="@+id/menuSettings"
+                android:title="@string/Settings"
+                android:icon="@drawable/settings"
+                />
+
+            <item android:id="@+id/menuLogout"
+                android:title="@string/logout"
+                android:icon="@drawable/logouticon"
+                />
+
+        </menu>
+    </item>
+
+
+</menu>

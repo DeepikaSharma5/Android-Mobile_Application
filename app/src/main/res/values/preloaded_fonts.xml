@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/bad_script</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/habibi</item>
+        <item>@font/oregano</item>
+        <item>@font/orienta</item>
+        <item>@font/overlock</item>
+        <item>@font/pinyon_script</item>
+        <item>@font/caveat_brush</item>
+    </array>
+</resources>

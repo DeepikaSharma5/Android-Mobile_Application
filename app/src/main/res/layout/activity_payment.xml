@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="monospace"
+        android:background="@drawable/gradient_background"
+        android:text="@string/payment"
+        android:textAlignment="center"
+        android:textColor="#060505"
+        android:textSize="38sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/visa"
+                android:layout_width="335dp"
+                android:layout_height="185dp"
+                android:src="@drawable/visacard"/>
+            <TextView
+                android:id="@+id/bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK NAME"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="26dp"/>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:textSize="18sp"
+                android:layout_below="@+id/bankname"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="26dp"/>
+
+
+            <TextView
+                android:id="@+id/cardholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cardholder"
+                android:textSize="15sp"
+                android:layout_below="@+id/code"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="26dp"/>
+
+            <LinearLayout
+                android:id="@+id/lenear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_toEndOf="@+id/cardholder"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/month"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/mm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mm"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/a"
+                android:layout_toEndOf="@+id/lenear2"
+                android:layout_below="@+id/code"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:text="/"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/lenear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_toEndOf="@+id/a"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/yy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yy"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cvv"
+                android:layout_toEndOf="@+id/lenear3"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/code"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cv"
+                android:layout_toEndOf="@+id/lenear3"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/cvv"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            app:cardBackgroundColor="#FCEBEB"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_below="@+id/rl1"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/num"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="19dp"
+                        android:hint="XXXX"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <EditText
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/text1"
+                        android:hint="XXXX"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <EditText
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/text2"
+                        android:hint="XXXX"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <EditText
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/text3"
+                        android:hint="XXXX"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:id="@+id/holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/holder"
+                        android:layout_below="@+id/text1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:layout_marginStart="171dp"
+                        android:layout_marginTop="18dp"
+                        android:hint="Name on card"
+                        android:inputType="text"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:id="@+id/expire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expire"
+                        android:layout_below="@+id/text5"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text5"
+                        android:layout_marginStart="151dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="MM"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <EditText
+                        android:id="@+id/text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text5"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="YY"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textColorHint="#969698"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:id="@+id/cvv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvv1"
+                        android:layout_below="@+id/text7"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text7"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="XXX"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColorHint="#969698"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/finalamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FINAL AMOUNT"
+                        android:layout_below="@+id/cvv1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/finalamt1"
+                        android:layout_width="120dp"
+                        android:layout_height="28dp"
+                        android:text="FINAL"
+                        android:layout_below="@+id/text8"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/finalamt"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/buttonround"
+                        android:backgroundTint="#BDE0FC"
+                        android:text="@string/view" />
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/view">
+
+                        <Button
+                            android:id="@+id/proceed1"
+                            android:layout_width="170dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/view"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="7dp"
+                            android:background="@drawable/buttonround"
+                            android:backgroundTint="#51F868"
+                            android:text="@string/proceed1" />
+
+                        <Button
+                            android:id="@+id/cancel1"
+                            android:layout_width="170dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/view"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/buttonround"
+                            android:backgroundTint="#FB171E"
+                            android:text="@string/cancel1" />
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear1"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/buttonround"
+                        android:backgroundTint="#F7AC89"
+                        android:text="@string/edit" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>
